@@ -1,5 +1,5 @@
 body {
-    background-color: rgb);
+    background-color: antiquewhite;
     margin: 0;
     overflow: hidden;
   }
@@ -16,7 +16,7 @@ body {
     transform: translateX(-50%);
     font-size: 40px;
     opacity: 0;
-    animation: slideUp 6s forwards;
+    animation: slideUp 5s forwards;
     
   }
   @keyframes slideUp {
@@ -30,15 +30,33 @@ body {
   }
   }
     
-#animatedText::content{
-color: blue;
-}
 
-@media only screen and (max-width:900px){
+
+@media only screen and (max-width:800px){
 #animatedText{
-font-size: 30px;
+font-size: 25px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+font-weight: 600;
 }
 }
-
+@media only screen and (max-width:600px){
+  #animatedText{
+  font-size: 30px;
+  letter-spacing: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+  font-weight: 500;
+  }
+  @keyframes slideUp {
+    to {
+      opacity: 1; 
+      transform: translateX(-60%) translateY(-545px);
+    }
+     
+  60%{
+    letter-spacing: 5px; 
+  }
+  }
+    
+  }
   
 
