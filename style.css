@@ -1,0 +1,44 @@
+body {
+    background-color: rgb);
+    margin: 0;
+    overflow: hidden;
+  }
+
+  #animatedText::before{
+      color: rgb(208, 22, 22);
+  }
+  #animatedText{
+      color: rgb(132, 113, 91);
+      font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+    opacity: 0;
+    animation: slideUp 6s forwards;
+    
+  }
+  @keyframes slideUp {
+    to {
+      opacity: 1; 
+      transform: translateX(-60%) translateY(-540px);
+    }
+     
+  60%{
+    letter-spacing: 10px; 
+  }
+  }
+    
+#animatedText::content{
+color: blue;
+}
+
+@media only screen and (max-width:900px){
+#animatedText{
+font-size: 30px;
+}
+}
+
+  
+
